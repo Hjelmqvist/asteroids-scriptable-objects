@@ -52,6 +52,8 @@ MonoBehaviour:
   _minTorque: 0.1
   _maxTorque: 0.5
   _shape: {fileID: 1524412162417054026}
+  _onAsteroidHit: {fileID: 11400000, guid: 5bc19fe04909ad641b41ad1f2392f34b, type: 2}
+  _asteroidSet: {fileID: 11400000, guid: 8126e590ef6ed574f8f197b9b2f1d131, type: 2}
 --- !u!50 &1784223117350305362
 Rigidbody2D:
   serializedVersion: 4

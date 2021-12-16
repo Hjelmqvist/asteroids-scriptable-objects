@@ -4,11 +4,13 @@ namespace Ship
 {
     public class Hull : MonoBehaviour
     {
+        [SerializeField] IntReference _health;
+
         private void OnCollisionEnter2D(Collision2D other)
         {
-            if (string.Equals(other.gameObject.tag, "Asteroid"))
+            if (string.Equals( other.gameObject.tag, "Asteroid" ))
             {
-               
+                _health.ApplyChange( -1 );
             }
         }
     }

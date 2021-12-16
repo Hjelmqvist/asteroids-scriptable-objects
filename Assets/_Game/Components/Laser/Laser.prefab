@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5567069101288871500}
   m_Layer: 0
   m_Name: Laser
-  m_TagString: Untagged
+  m_TagString: Laser
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46,7 +46,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 0.2
-  _maxLifetime: 3
 --- !u!50 &5567069101288871500
 Rigidbody2D:
   serializedVersion: 4
@@ -82,7 +81,7 @@ GameObject:
   - component: {fileID: 2848251788891171716}
   m_Layer: 0
   m_Name: Laser_Sprite
-  m_TagString: Untagged
+  m_TagString: Laser
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

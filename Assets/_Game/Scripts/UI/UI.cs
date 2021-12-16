@@ -1,5 +1,6 @@
 ﻿using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace UI
 {
@@ -10,21 +11,26 @@ namespace UI
         [SerializeField] private TextMeshProUGUI _timerText;
         [SerializeField] private TextMeshProUGUI _laserText;
 
-        private void SetHealthText(string text)
+        public void OnHealthChanged(int health)
         {
-            _healthText.text = text;
+            SetHealthText( health );
         }
-        
+
+        private void SetHealthText(int health)
+        {
+            _healthText.text = $"Health: {health}";
+        }
+
         private void SetScoreText(string text)
         {
             _scoreText.text = text;
         }
-        
+
         private void SetTimerText(string text)
         {
             _timerText.text = text;
         }
-        
+
         private void SetLaserText(string text)
         {
             _laserText.text = text;
