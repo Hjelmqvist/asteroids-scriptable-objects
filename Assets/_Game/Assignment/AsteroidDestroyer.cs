@@ -9,17 +9,14 @@ namespace Asteroids
         [SerializeField] Asteroid _asteroidPrefab;
 
         [Header("Splitting")]
-        [Tooltip("The minimum allowed size an asteroid has to be for it to split")]
-        [SerializeField] float _splitMinSize = 1f;
-        [Tooltip("How many parts to split into")]
-        [SerializeField] int _splitNumber = 4;
+        [SerializeField, Tooltip( "The minimum size an asteroid has to be to split" )] float _splitMinSize = 1f;
+        [SerializeField, Tooltip( "How many parts to split into" )] int _splitNumber = 4;
         [SerializeField, Range(0, 1)] float _splitSizeMultiplier = 0.25f;
 
         public void OnAsteroidHit(int key)
         {
             if (_asteroidSet.TryFind( key, out Asteroid asteroid ))
             {
-                _asteroidSet.Remove( key );
                 SplitAsteroid( asteroid );
                 Destroy( asteroid.gameObject );
             }

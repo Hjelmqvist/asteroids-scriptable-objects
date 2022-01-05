@@ -16,7 +16,7 @@ namespace Asteroids
 
         [Header( "References:" )]
         [SerializeField] private Transform _shape;
-        [SerializeField] private ScriptableIntEvent _onAsteroidHit;
+        [SerializeField] private ScriptableEventInt _onAsteroidHit;
         [SerializeField] private AsteroidSet _asteroidSet;
 
         private Rigidbody2D _rigidbody;

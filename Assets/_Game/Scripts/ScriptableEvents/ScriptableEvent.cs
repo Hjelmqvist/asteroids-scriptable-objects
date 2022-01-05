@@ -1,6 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using System;
+using UnityEngine;
+
+[CreateAssetMenu( fileName = "New ScriptableEvent", menuName = "ScriptableObjects/ScriptableEvent" )]
+public abstract class ScriptableEvent : ScriptableEventBase
+{
+}
 
 public abstract class ScriptableEvent<T> : ScriptableEventBase
 {

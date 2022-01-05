@@ -20,8 +20,3 @@ public abstract class ScriptableEventBase : ScriptableObject
         _eventNoPayload -= action;
     }
 }
-
-[CreateAssetMenu( fileName = "New ScriptableEvent", menuName = "ScriptableObjects/ScriptableEvent" )]
-public abstract class ScriptableEvent : ScriptableEventBase
-{
-}

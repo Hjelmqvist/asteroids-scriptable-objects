@@ -8,6 +8,8 @@ namespace Asteroids
     {
         Dictionary<int, Asteroid> _asteroids = new Dictionary<int, Asteroid>();
 
+        public int Number => _asteroids.Count;
+
         public void Add(int key, Asteroid asteroid)
         {
             _asteroids.Add( key, asteroid );
